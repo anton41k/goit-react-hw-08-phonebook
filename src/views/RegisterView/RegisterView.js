@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
-import { getUserIsLoggedIn, signUp, getAuthError } from "../../redux/auth";
+import { getUserIsLoggedIn, signUp } from "../../redux/auth";
 import toast from "react-hot-toast";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
@@ -14,7 +14,6 @@ import css from "./RegisterView.module.css";
 export default function RegisterView() {
   const dispatch = useDispatch();
   const isLoading = useSelector(getUserIsLoggedIn);
-  const isError = useSelector(getAuthError);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -40,10 +39,11 @@ export default function RegisterView() {
       return toast.error("Passwords must be at least 7 characters long!");
     }
 
-    dispatch(signUp({ name, email, password }));
-    if (isError) {
-      toast.error("User with this email has already been created!");
-    }
+    dispatch(signUp({ name, email, password })).then((response) => {
+      if (response.error) {
+        toast.error("Incorrect password!");
+      }
+    });
   };
 
   return (

@@ -8,6 +8,7 @@ const signUp = createAsyncThunk("auth/register", async (credentials) => {
 
 const logIn = createAsyncThunk("auth/logIn", async (credentials) => {
   const data = await authApi.logInUser(credentials);
+  console.log(data);
   return data;
 });
 const logOut = createAsyncThunk("auth/logOut", async () => {

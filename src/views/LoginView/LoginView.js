@@ -32,10 +32,12 @@ export default function LoginView() {
       return toast.error("💩 Please fill in all fields!");
     }
 
-    dispatch(logIn({ email, password }));
-    if (isError) {
-      toast.error("Wrong login or password!");
-    }
+    const data = dispatch(logIn({ email, password })).then((response) => {
+      if (response.error) {
+        toast.error("Wrong login or password!");
+      }
+    });
+    console.log(data);
   };
 
   return (

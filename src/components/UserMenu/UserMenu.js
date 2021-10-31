@@ -15,7 +15,7 @@ export default function UserMenu() {
   return (
     <div className={css.container_user}>
       <Stack direction="row" spacing={2}>
-        <Avatar {...stringAvatar(name)} />
+        {name && <Avatar {...stringAvatar(name)} />}
       </Stack>
       <div className={css.thumb_greetings}>
         <div className={css.greetings}>
