@@ -16,7 +16,7 @@
   max-width: calc(100vw - 48px);
   max-height: calc(100vh - 24px);
   left: 0;
-  top: -60px;
+  top: 40px;
   background-color: var(--accent-color-black);
   box-shadow: var(--box-shadow);
   border-radius: 5px;
