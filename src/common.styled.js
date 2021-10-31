@@ -14,7 +14,7 @@ export const NavLinkStyled = styled(NavLink)`
   text-shadow: 1px 1px 0 var(--color-gray), 1px -1px 0 var(--color-gray),
     -1px 1px 0 var(--color-gray), -1px -1px 0 var(--color-gray);
   color: var(--accent-color-black07);
-  transition: all var(--animation-duration);
+  transition: all var(--animation-duration) var(--timing-function);
   &:hover,
   &:focus {
     text-shadow: 1px 1px 0 var(--color-white), 1px -1px 0 var(--color-white),
