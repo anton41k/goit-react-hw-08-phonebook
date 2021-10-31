@@ -1,0 +1,53 @@
+.home_logo {
+  padding: 50px 20px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.home_logo h1 {
+  position: relative;
+  text-shadow: 1px 1px 0 var(--color-gray), 1px -1px 0 var(--color-gray),
+    -1px 1px 0 var(--color-gray), -1px -1px 0 var(--color-gray);
+  color: var(--accent-color-black07);
+  transition: all var(--animation-duration);
+
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1;
+  padding: 10px 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.home_logo h1:hover {
+  text-shadow: 1px 1px 0 var(--color-white), 1px -1px 0 var(--color-white),
+    -1px 1px 0 var(--color-white), -1px -1px 0 var(--color-white);
+}
+
+.home_logo h1:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 200%;
+  border-radius: 50%/30%;
+  border: 6px solid var(--accent-color-orange);
+
+  transition: all var(--animation-duration);
+
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+@media (min-width: 420px) {
+  .home_logo h1 {
+    font-size: 3em;
+  }
+}
+@media (min-width: 768px) {
+  .home_logo h1 {
+    font-size: 4em;
+  }
+}

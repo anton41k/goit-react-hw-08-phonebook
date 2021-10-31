@@ -1,0 +1,56 @@
+.filter_label {
+  display: flex;
+  flex-direction: column;
+
+  width: 290px;
+
+  margin: 0 auto;
+
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.filter_input {
+  margin: 4px 0;
+  padding: 4px 10px;
+
+  color: var(--accent-color-black);
+  background-color: var(--color-gray08);
+
+  border: 1px solid var(--color-input-border);
+  border-radius: 3px;
+  border-left: none;
+
+  width: 100px;
+  height: 28px;
+
+  transition: all var(--animation-duration) var(--timing-function);
+}
+
+.filter_input:hover,
+.filter_input:focus {
+  box-shadow: 0 0 1px 0 var(--accent-color-orange),
+    0 0 2px 1px var(--accent-color-orange);
+}
+@media screen and (min-width: 420px) {
+  .filter_input {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .filter_input {
+    width: 190px;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .filter_input {
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter_input {
+    width: 350px;
+  }
+}

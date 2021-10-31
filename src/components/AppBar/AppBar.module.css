@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid var(--color-gray);
+  box-shadow: 0 0 5px 0 var(--accent-color-orange) inset,
+    0 0 5px 4px var(--accent-color-orange);
+  width: 100vw;
+  height: 75px;
+
+  padding: 0 5px;
+
+  background-color: var(--accent-color-black);
+}
+
+@media (min-width: 420px) {
+  .header {
+    padding: 0 10px;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 0 30px;
+  }
+}

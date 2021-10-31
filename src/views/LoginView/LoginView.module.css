@@ -1,0 +1,15 @@
+.form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin: 40px auto;
+  border-radius: 5px;
+  background-color: var(--accent-color-black);
+  box-shadow: var(--box-shadow);
+}
+
+.thumb_input {
+  display: flex;
+  align-items: center;
+}

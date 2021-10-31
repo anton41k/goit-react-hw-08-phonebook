@@ -1,0 +1,12 @@
+.form {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.thumb_input {
+  display: flex;
+  align-items: center;
+}
