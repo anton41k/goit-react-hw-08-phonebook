@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/Container/Container.module.css"],"names":[],"mappings":"AAAA,4BACE,cAAe,CACf,MAAO,CACP,KACF","file":"Container.dd4d9168.chunk.css","sourcesContent":[".container {\r\n  position: fixed;\r\n  left: 0;\r\n  top: 0;\r\n}\r\n"]}
